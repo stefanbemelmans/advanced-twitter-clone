@@ -1,0 +1,34 @@
+profile > img {
+    height: 200px;
+    width: 200px;
+}
+    
+}
+
+.flex-grid {
+    display: flex;
+}
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: gray; 
+}
+.profile {
+    
+    width: 30%;
+    display: flex;
+    background-color: blue;
+    height: 500px;
+    width: 20%;
+    border: 2px solid red;
+    flex-direction: column;
+}
+.body {
+   
+    border: 1px dashed yellow;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: lightgoldenrodyellow;
+    width: 40%;
+}
