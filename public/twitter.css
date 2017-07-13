@@ -32,3 +32,28 @@ profile > img {
     background-color: lightgoldenrodyellow;
     width: 40%;
 }
+
+.other {
+    width: 30%;
+    flex:1;
+    border: 2px solid purple;
+    text-align: center;
+    justify-content: center;
+    background-color: lightgreen;
+}
+
+.notification {
+    flex: 1;
+    height: 7rem;
+    width: 17rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(purple), to(whitesmoke));
+    background-image: -webkit-linear-gradient(top, purple, whitesmoke);
+    background-image: -moz-linear-gradient(top, purple, whitesmoke);
+    background-image: linear-gradient(to bottom, purple, whitesmoke);
+
+
+}
+.message{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
