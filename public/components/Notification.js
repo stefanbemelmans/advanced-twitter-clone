@@ -1,5 +1,4 @@
-import React, { Component }  from 'react';
-function Notification(props){
+export function Notification(props){
     return(
         <div className="notification">
            <img src="https://placeholdit.co//i/50x50?&text=Picture" />
@@ -9,4 +8,3 @@ function Notification(props){
         </div>
     )
 }
-export default Notification

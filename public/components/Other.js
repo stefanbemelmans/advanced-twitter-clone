@@ -1,4 +1,4 @@
-function Other(props){
+export function Other(props){
     return (
         <div class="other"> 
             <h3>More Cool Stuff!</h3>
