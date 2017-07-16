@@ -5,6 +5,8 @@ import './App.css';
 import Body from './components/Body.js';
 import Header from './components/Header.js';
 import Profile from './components/Profile.js';
+
+
 // import Notification from './components/Notification.js';
 // import Other from './components/Other.js';
 

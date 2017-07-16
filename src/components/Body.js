@@ -1,5 +1,7 @@
 
 import React, { Component }  from 'react';
+import Message from './Message.js';
+
 // class Body extends React.Component {
 //     constructor(props) {
 //         super();
@@ -14,8 +16,7 @@ import React, { Component }  from 'react';
             <p>Lorem Ipmsum and all that</p>
             <br />
             <img src="https://placeholdit.co//i/200x200?&text=Picture" alt="logo" />
-            <div><p>text about the picture yall</p>
-            </div>
+            <div><Message />            </div>
         </div>);
     }   
 
