@@ -1,4 +1,6 @@
 import React, { Component }  from 'react';
+import Notifications from './Notifications.js';
+import renderNote from './Notification.js';
 
 //     return(
 //         <div className="message">
@@ -24,8 +26,17 @@ class Message extends React.Component {
     }
   
     handleSubmit(event) {
-      appendChild ' + this.state.value);
       event.preventDefault();
+      console.log(this.state.value);
+      renderNote(this.state.value);
+      
+      
+      // return (
+      //   <div className='other'>
+      //     <Notifications /> <Notification message={this.state.value} />
+      //   </div>
+      // )
+     
     }
   
     render() {

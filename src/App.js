@@ -6,6 +6,9 @@ import Body from './components/Body.js';
 import Header from './components/Header.js';
 import Profile from './components/Profile.js';
 import Notification from './components/Notification.js';
+import Notifications from './components/Notifications.js';
+
+
 // import Other from './components/Other.js';
 
 
@@ -19,7 +22,9 @@ function App(){
         <Profile />
 
         <Body />
-        <h3>Hello!</h3>  
+
+         <Notifications message="Hello!"/> 
+        
       </div>
     </div>
     );

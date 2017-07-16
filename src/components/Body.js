@@ -2,6 +2,7 @@
 import React, { Component }  from 'react';
 import Message from './Message.js';
 
+
 // class Body extends React.Component {
 //     constructor(props) {
 //         super();
