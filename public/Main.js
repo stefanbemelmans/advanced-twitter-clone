@@ -5,7 +5,7 @@ function Main(){
     <div>
       <div><Header title="Header's Rule"/>Hello</div>
 
-      <div className="flex-grid"></Profile/><Body /> <Other /></div>
+      <div className="flex-grid"><Profile/><Body /> <Other /></div>
     </div>
   )
 }

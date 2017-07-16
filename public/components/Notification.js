@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 function Notification(props){
     return(
         <div className="notification">
@@ -8,3 +9,4 @@ function Notification(props){
         </div>
     )
 }
+export default Notification
