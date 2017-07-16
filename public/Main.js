@@ -1,3 +1,4 @@
+import Body from './components';
 function Main(){
   return (
     <div>

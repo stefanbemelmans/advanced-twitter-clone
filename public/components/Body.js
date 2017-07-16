@@ -1,4 +1,4 @@
-function Body(props){
+export function Body(props){
     return(
         <div className="body">
             <h1>All the cool Body stuff</h1>
@@ -12,3 +12,4 @@ function Body(props){
         </div>
     )
 }
+
