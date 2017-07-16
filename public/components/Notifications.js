@@ -1,4 +1,4 @@
-export function Notification(props){
+export function Notifications(props){
     return(
         <div className="notification">
            <img src="https://placeholdit.co//i/50x50?&text=Picture" />
