@@ -24,7 +24,7 @@ class Message extends React.Component {
     }
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
+      appendChild ' + this.state.value);
       event.preventDefault();
     }
   
