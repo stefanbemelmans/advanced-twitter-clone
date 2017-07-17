@@ -9,7 +9,6 @@
 }
 
 .profile {
-    
     width: 12rem;
     display: flex;
     background-color: blue;
@@ -23,6 +22,13 @@
 .profile > img {
     height: 4rem;
     width: 4rem;
+}
+.profileLower {
+    background:lightblue;
+    height: auto;
+    border: 2px dashed red;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .body {
    

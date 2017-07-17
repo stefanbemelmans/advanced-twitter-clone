@@ -1,6 +1,6 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import Notifications from './Notifications.js';
-import renderNote from './Notification.js';
+import renderNote from './Notifications.js';
 
 //     return(
 //         <div className="message">

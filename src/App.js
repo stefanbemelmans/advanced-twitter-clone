@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import '../public/twitter.css';
 import './App.css';
@@ -15,7 +15,7 @@ import Notifications from './components/Notifications.js';
 function App(){
    return (
     <div>
-      <Header title="Your Title Here" />
+      <Header title='Your Title Here' />
           
         
         <div className='flex-grid'>
@@ -23,7 +23,7 @@ function App(){
 
         <Body />
 
-         <Notifications message="Hello!"/> 
+         <Notifications /> 
         
       </div>
     </div>
