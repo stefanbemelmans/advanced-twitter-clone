@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+
 function Profile(){
     return(
         <div className="profile">

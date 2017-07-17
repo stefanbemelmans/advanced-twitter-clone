@@ -28,7 +28,7 @@ class Message extends React.Component {
     handleSubmit(event) {
       event.preventDefault();
       console.log(this.state.value);
-      renderNote(this.state.value);
+      <Notification message={this.state.value} />
       
       
       // return (

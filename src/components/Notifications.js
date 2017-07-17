@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 import Notification from './Notification.js'
 
 export function renderNote(message){
+  
   return (<Notification message={message} />)
 }
 export function Notifications(props) {

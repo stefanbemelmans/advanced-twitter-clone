@@ -13,6 +13,7 @@ import Notifications from './components/Notifications.js';
 
 
 function App(){
+  this.setState({message: "Default Message"})
    return (
     <div>
       <Header title="Your Title Here" />
@@ -23,7 +24,7 @@ function App(){
 
         <Body />
 
-         <Notifications message="Hello!"/> 
+         <Notifications /> 
         
       </div>
     </div>
