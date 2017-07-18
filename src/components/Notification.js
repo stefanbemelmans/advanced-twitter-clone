@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export function Notification(props){
-    return(
+export default class Notification extends React.Components{
+    constructor(props){
+        super();
+    }
+    render(){
+        return(
         <div className="notification">
-           <img src="https://placeholdit.co//i/50x50?&text=Picture" alt='logo'/>
-           <div className="message"><p>{props.message}</p>
-           </div>
+        <img src="https://placeholdit.co//i/50x50?&text=Picture" alt='logo'/>
+        <div className="message"><p></p>
+        </div>
 
         </div>
-    )
-}
-export default Notification;
+        )
+        }
+    }

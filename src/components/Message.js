@@ -1,15 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Notifications from './Notifications.js';
 import renderNote from './Notifications.js';
-
-//     return(
-//         <div className="message">
-//             <input type="text-area" defaultValue="Tell Us something!"></input>
-//            <button type="submit" id="sendIt" onClick={sendIt}>Sendit!!</button>
-//         </div>
-
-//     )
-// }
 
 
 class Message extends React.Component {
@@ -30,13 +21,6 @@ class Message extends React.Component {
       console.log(this.state.value);
       renderNote(this.state.value);
       
-      
-      // return (
-      //   <div className='other'>
-      //     <Notifications /> <Notification message={this.state.value} />
-      //   </div>
-      // )
-     
     }
   
     render() {
