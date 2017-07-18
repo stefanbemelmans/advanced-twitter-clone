@@ -1,6 +1,12 @@
 import React from 'react';
-function Profile(){
-    return(
+
+
+export default class Profile extends React.Component{
+    constructor(props){
+        super();
+    }
+    render(){
+    	return(
         <div className="profile">
             <h1>Name</h1>
             <img src="https://placeholdit.co//i/200x200?&text=Picture" alt='logo'/>
@@ -12,6 +18,4 @@ function Profile(){
         </div>
     
     )
-}
-
-export default Profile;
+}}

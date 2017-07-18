@@ -12,6 +12,7 @@ import Notifications from './components/Notifications.js';
 // import Other from './components/Other.js';
 
 
+
 export default class App extends React.Component{
   constructor(props){
     super();
