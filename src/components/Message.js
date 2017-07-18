@@ -1,5 +1,5 @@
 import React from 'react';
-import renderNote from './Notifications.js';
+import Notifications from './Notifications.js';
 
 
 export default class Message extends React.Component {
@@ -20,12 +20,9 @@ export default class Message extends React.Component {
     handleSubmit(event) {
       event.preventDefault();
       console.log(this.state.value);
-      renderNote(this.state.value);
-      };
-      
-    }
-    
-
+      return (<Notifications message={this.state.value} />)   
+       };
+   
     render() {
       return (
         <form onSubmit={this.handleSubmit}>

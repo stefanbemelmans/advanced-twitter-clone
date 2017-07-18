@@ -4,7 +4,7 @@ import Notification from './Notification.js';
     constructor (props) {
       super();
       this.state={msg:""};
-      this.componentDidMoun//I think this is the key
+      // this.componentDidMount() //I think this is the key
       function renderNote(note){
        this.setState({msg:note})
         }
@@ -14,8 +14,8 @@ import Notification from './Notification.js';
      
       return (
         <div class="other"> 
-          {/* <Notification message={this.state.msg} /> */}
-            <h3>{this.state.msg}</h3>
+           {/* <Notification message={this.props.msg} />.componentDidMount(); 
+            <h3>{this.state.msg} Or Something</h3> */}
             {/* <br />
             <input type="text" id="blurb">Write something clever</input>
             <button type="submit">click</button>
