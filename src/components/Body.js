@@ -1,8 +1,8 @@
 
-import React, { Component }  from 'react';
+import React from 'react';
 import Message from './Message.js';
 
-class Body extends React.Component {
+export default class Body extends React.Component {
     constructor(props) {
         super();
     }
@@ -19,6 +19,3 @@ class Body extends React.Component {
         </div>);
     }
 }   
-
-
-export default Body;//need this and the import above to work in this format

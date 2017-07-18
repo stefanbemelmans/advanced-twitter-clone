@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
-import Notifications from './Notifications.js';
+import React from 'react';
 import renderNote from './Notifications.js';
 
 
-class Message extends React.Component {
+export default class Message extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: ''};
+      this.state = {
+        value: ''
+      };
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -35,4 +36,4 @@ class Message extends React.Component {
       );
     }
   }
-  export default Message;
+  
