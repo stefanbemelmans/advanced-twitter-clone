@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Notification extends React.Components{
+export default class Notification extends React.Component{
     constructor(props){
         super();
     }
@@ -13,5 +13,5 @@ export default class Notification extends React.Components{
 
         </div>
         )
-        }
     }
+}

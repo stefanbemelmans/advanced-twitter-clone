@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Notification from './Notification.js';
 import './Message.js';
 
 let msg;
-export function renderNote(message){
-  msg = message;
-}
-export function Notifications(props) {
- 
+
+export default class Notifications extends React.Component{
+  constructor(props) {
+    super();
+    
+    function renderNote(message){
+      msg = message;
+    }
+  }
+  render(){ 
+    //need to intialize notifications state and notification state and pass it on down the line
+
     return (
         <div class="other"> 
           <Notification message={props} />
@@ -20,6 +27,6 @@ export function Notifications(props) {
           
          </div>
             
-    )       
+          )       
+    }
 }
-  export default Notifications;
