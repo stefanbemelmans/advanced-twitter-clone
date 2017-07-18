@@ -3,8 +3,8 @@ import React from 'react';
 export default class Notification extends React.Component{
     constructor(props){
 				super();
-				
-    }
+				// this.setState({props:message})
+                 }
     render(){
         return(
         <div className="notification">

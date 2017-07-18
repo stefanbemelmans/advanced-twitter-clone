@@ -17,22 +17,22 @@ export default class App extends React.Component{
   constructor(props){
     super();
     this.state ={
-      message: ""
+      message: "How Are Ya?"
       }
     } 
    render(){
      return (
       <div>
-        <Header title="Your Title Here" />
+        <Header />
             
           
           <div className='flex-grid'>
           <Profile />
 
           <Body />
-
+          componentDidMount(
           <Notifications /> 
-          
+          );
         </div>
       </div>
       )
