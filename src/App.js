@@ -32,9 +32,9 @@ export default class App extends React.Component{
           <Profile />
 
           <Body />
-          componentDidMount(
-          <Notifications message="whattup" /> 
-          );
+          
+          <Notifications message={this.state.message} /> 
+          
         </div>
       </div>
       )

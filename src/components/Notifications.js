@@ -4,16 +4,17 @@ import Notification from './Notification.js';
     constructor (props) {
       super();
       // this.componentDidMount() //I think this is the key
-      this.renderNote = this.renderNote.bind(this);
+     
     }
     renderNote(note){
-    document.getElementById('notify').appendChild(<Notification message={note} />);
-     } 
+      this.setState({message: note})
+    }
+    
     render(){
      
       return (
         <div id="notify" class="other"> 
-           <Notification message={this.props.message} />.componentDidMount(); 
+           <Notification message={this.statr.message} /> 
             <h3>{this.props.message} Or Something</h3> */}
             {/* <br />
             <input type="text" id="blurb">Write something clever</input>
