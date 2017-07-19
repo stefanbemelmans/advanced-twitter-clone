@@ -11,7 +11,7 @@ export default class Notification extends React.Component{
         return(
         	<div className="notification">
             <img src="https://placeholdit.co//i/50x50?&text=Picture" alt='logo'/>
-            <div className="message"><p>{this.state.message}</p>
+            <div className="message"><p>{this.props.message}</p>
             </div>
 
         	</div>

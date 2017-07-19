@@ -6,12 +6,11 @@ import Notifications from './Notifications.js';
 export default class Message extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {
-        value: '',
-        message: ''
+      this.propTypes= {
+        value: ''
 
       };
-  
+      
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -19,11 +18,12 @@ export default class Message extends React.Component {
     handleChange(event) {
       this.setState({value: event.target.value});
     }
-  
+     
     handleSubmit(event) {
       event.preventDefault();
       console.log(this.state.value);
-      this.setState({message:this.state.value})
+      this.props.callBack(this.state.value);
+      // this.setState({message:this.state.value})
     }
     render() {
       return (
