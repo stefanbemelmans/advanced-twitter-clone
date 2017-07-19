@@ -1,5 +1,6 @@
 import React from 'react';
-import Notifications,{ renderNote }  from './Notifications.js';
+import Notifications from './Notifications.js';
+
 // import renderNote from Notifications;
 
 export default class Message extends React.Component {

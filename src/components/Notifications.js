@@ -14,7 +14,7 @@ import Notification from './Notification.js';
      
       return (
         <div id="notify" class="other"> 
-           <Notification message={this.statr.message} /> 
+           <Notification message={this.state.message} /> 
             <h3>{this.props.message} Or Something</h3> */}
             {/* <br />
             <input type="text" id="blurb">Write something clever</input>
