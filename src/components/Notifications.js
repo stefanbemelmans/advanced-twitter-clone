@@ -11,10 +11,12 @@ import Notification from './Notification.js';
     }
     
     render(){
-     
+      this.componentDidMount(function(){
+        this.setState({message:this.props.message})
+      })
       return (
         <div id="notify" class="other"> 
-           <Notification message={this.state.message} /> 
+           <Notification message={this.props.message} /> 
             <h3>{this.props.message} Or Something</h3> */}
             {/* <br />
             <input type="text" id="blurb">Write something clever</input>
