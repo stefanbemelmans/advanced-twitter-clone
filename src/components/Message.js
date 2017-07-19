@@ -21,9 +21,8 @@ export default class Message extends React.Component {
     handleSubmit(event) {
       event.preventDefault();
       console.log(this.state.value);
-      Notifications.renderNote(this.state.value);
-      };
-   
+      this.setState({message:this.state.value})
+    }
     render() {
       return (
         <form onSubmit={this.handleSubmit}>

@@ -32,13 +32,9 @@ export default class App extends React.Component{
           <div className='flex-grid'>
           <Profile />
 
-          <Body>
-            <Message />
-          </Body>
+          <Body />
           
-          <Notifications>
-            <Notification message={this.state.message} />
-           </Notifications> 
+          <Notifications message={this.state.message} /> 
           
         </div>
       </div>
