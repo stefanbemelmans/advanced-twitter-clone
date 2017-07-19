@@ -20,6 +20,8 @@ export default class App extends React.Component{
       message: "How Are Ya?"
       }
     } 
+
+    
    render(){
      return (
       <div>
@@ -31,7 +33,7 @@ export default class App extends React.Component{
 
           <Body />
           componentDidMount(
-          <Notifications /> 
+          <Notifications message="whattup" /> 
           );
         </div>
       </div>

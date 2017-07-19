@@ -20,7 +20,8 @@ import Notification from './Notification.js';
             <input type="text" id="blurb">Write something clever</input>
             <button type="submit">click</button>
             <br /> */}
-            <h1>So how about that</h1>
+            <h1>So how about that! This should be a message soon!</h1>
+            <h3>{this.props.message}</h3>
           
          </div>
             
