@@ -14,7 +14,7 @@ import Notification from './Notification.js';
      
       return (
         <div class="other"> 
-           {/* <Notification message={this.props.msg} />.componentDidMount(); 
+           <Notification message="{this.props.message}" />.componentDidMount(); 
             <h3>{this.state.msg} Or Something</h3> */}
             {/* <br />
             <input type="text" id="blurb">Write something clever</input>
