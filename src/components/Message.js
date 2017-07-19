@@ -7,7 +7,9 @@ export default class Message extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        value: ''
+        value: '',
+        message: ''
+
       };
   
       this.handleChange = this.handleChange.bind(this);

@@ -6,9 +6,9 @@ import Notification from './Notification.js';
       // this.componentDidMount() //I think this is the key
      
     }
-    renderNote(note){
-      this.setState({message: note})
-    }
+    // renderNote(note){
+    //   this.setState({message: note})
+    // }
     
     render(){
       this.componentDidMount(function(){
@@ -16,7 +16,7 @@ import Notification from './Notification.js';
       })
       return (
         <div id="notify" class="other"> 
-           <Notification message={this.props.message} /> 
+           {/* <Notification message={this.state.message} />  */}
             <h3>{this.props.message} Or Something</h3> */}
             {/* <br />
             <input type="text" id="blurb">Write something clever</input>
