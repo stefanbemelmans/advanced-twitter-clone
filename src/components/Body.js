@@ -15,7 +15,7 @@ export default class Body extends React.Component {
             <p>Lorem Ipmsum and all that</p>
             <br />
             <img src="https://placeholdit.co//i/200x200?&text=Picture" alt="logo" />
-            <div><Message />            </div>
+            <div>           </div>
         </div>);
     }
 }   
