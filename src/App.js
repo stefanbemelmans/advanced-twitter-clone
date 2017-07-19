@@ -33,7 +33,7 @@ export default class App extends React.Component{
 
           <Body />
           
-          <Notifications message={this.state.message} /> 
+          {/* <Notifications message={this.state.message} />  */}
           
         </div>
       </div>
