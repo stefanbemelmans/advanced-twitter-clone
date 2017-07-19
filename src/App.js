@@ -21,7 +21,9 @@ export default class App extends React.Component{
       message: "How Are Ya?"
       }
     } 
-
+    msgChange(newMsg){
+      this.setState({message: newMsg})
+    }
     
    render(){
      return (
@@ -32,9 +34,11 @@ export default class App extends React.Component{
           <div className='flex-grid'>
           <Profile />
 
-          <Body />
+          <Body callBack={(newMsg) => this.msgChange(newMsg)} />
           
-          {/* <Notifications message={this.state.message} />  */}
+           <Notifications>
+             <Notification message={this.state.message} />
+            </Notifications>  
           
         </div>
       </div>
