@@ -3,19 +3,18 @@ import Notification from './Notification.js';
   export default class Notifications extends React.Component {
     constructor (props) {
       super();
-      this.state={msg:""};
       // this.componentDidMount() //I think this is the key
-      function renderNote(note){
-       this.setState({msg:note})
-        }
+      this.renderNote = this.renderNote.bind(this);
     }
-      
+    renderNote(note){
+    document.getElementById('notify').appendChild(<Notification message={note} />);
+     } 
     render(){
      
       return (
-        <div class="other"> 
-           <Notification message="{this.props.message}" />.componentDidMount(); 
-            <h3>{this.state.msg} Or Something</h3> */}
+        <div id="notify" class="other"> 
+           <Notification message={this.props.message} />.componentDidMount(); 
+            <h3>{this.props.message} Or Something</h3> */}
             {/* <br />
             <input type="text" id="blurb">Write something clever</input>
             <button type="submit">click</button>
