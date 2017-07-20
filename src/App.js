@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import '../public/twitter.css';
 import './App.css';
 import Body from './components/Body.js';
 import Header from './components/Header.js';
 import Profile from './components/Profile.js';
-import Notification from './components/Notification.js';
+// import Notification from './components/Notification.js';
 import Notifications from './components/Notifications.js';
 // import Message from './components/Message.js';
 
@@ -18,11 +18,11 @@ export default class App extends React.Component{
   constructor(props){
     super();
     this.state ={
-      message: "How Are Ya?"
+      messages: ["How Are Ya?"]
       }
     } 
     msgChange(newMsg){
-      this.setState({message: newMsg})
+      this.setState({messages: [newMsg]})
     }
     
    render(){
@@ -36,10 +36,9 @@ export default class App extends React.Component{
 
           <Body callBack={(newMsg) => this.msgChange(newMsg)} />
           
-           <Notifications>
-             <Notification message={this.state.message} />
-            </Notifications>  
-          
+           <Notifications messages={this.state.messages} />
+            
+            
         </div>
       </div>
       )

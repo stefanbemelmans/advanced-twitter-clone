@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Notification from './Notification';
 // import Notification from './Notification.js';
   export default class Notifications extends React.Component {
     constructor (props) {
-      super();
+      super(props);
       
       }
       // this.componentDidMount() //I think this is the key
@@ -13,17 +14,19 @@ import React, { Component } from 'react';
     // }
     
     render(){
-      
+      const messages = this.props.messages.map(message => {
+        return <Notification message={this.props.message} />
+      })
       return (
-        <div id="notify" class="other"> 
-           {/* <Notification message={this.state.message} />  */}
-            <h3>{this.state.message} Or Something</h3> */}
-            {/* <br />
-            <input type="text" id="blurb">Write something clever</input>
-            <button type="submit">click</button>
-            <br /> */}
+        <div id="notify" className="other"> 
+           
+            
+            {messages}
+           
+            <h3>"this is supposed to be a message" Or Something</h3> */}
+           
             <h1>So how about that! This should be a message soon!</h1>
-            <h3>{this.state.message}</h3>
+            <h3>This is ALSO supposed to be a message</h3>
           
          </div>
             

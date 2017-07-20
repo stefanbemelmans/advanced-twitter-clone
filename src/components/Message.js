@@ -1,16 +1,14 @@
 import React from 'react';
-import Notifications from './Notifications.js';
+// import Notifications from './Notifications.js';
 
 // import renderNote from Notifications;
 
 export default class Message extends React.Component {
     constructor(props) {
       super(props);
-      this.propTypes= {
+      this.state= {
         value: ''
-
-      };
-      
+      }
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }

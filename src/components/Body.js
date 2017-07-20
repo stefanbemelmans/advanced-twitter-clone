@@ -6,11 +6,12 @@ import Notification from './Notification.js';
 
 export default class Body extends React.Component {
     constructor(props) {
-        super();
-        this.state = { message: ''}
+        super(props);
+        this.state = { messages: []}
+        this.newMsg = this.newMsg.bind(this);
     }
     newMsg(newState) {
-        this.setState({message: newState})
+        this.setState({messages: [newState]})
     }
     render(){
     return (
@@ -24,9 +25,7 @@ export default class Body extends React.Component {
             <div> <Message callBack={ (newState) => this.newMsg(newState) } />  
              
              </div>
-             <Notifications>
-                 <Notification message={this.state.message} />
-              </Notifications>
+             <Notifications messages={this.state.messages}></Notifications>
         </div>);
     }
 }   
