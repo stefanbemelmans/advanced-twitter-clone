@@ -14,8 +14,8 @@ import Notification from './Notification';
     // }
     
     render(){
-      const messages = this.props.messages.map(message => {
-        return <Notification message={this.props.message} />
+      const messages = this.props.messages.map(message => { 
+        return <Notification message={this.props.message} key={message} />
       })
       return (
         <div id="notify" className="other"> 

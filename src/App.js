@@ -16,7 +16,7 @@ import Notifications from './components/Notifications.js';
 
 export default class App extends React.Component{
   constructor(props){
-    super();
+    super(props);
     this.state ={
       messages: ["How Are Ya?"]
       }

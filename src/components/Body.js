@@ -25,7 +25,7 @@ export default class Body extends React.Component {
             <div> <Message callBack={ (newState) => this.newMsg(newState) } />  
              
              </div>
-             <Notifications messages={this.state.messages}></Notifications>
+              <Notifications messages={this.state.messages} /> 
         </div>);
     }
 }   
