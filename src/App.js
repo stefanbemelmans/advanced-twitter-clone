@@ -22,7 +22,8 @@ export default class App extends React.Component{
       }
     } 
     msgChange(newMsg){
-      this.setState({messages: [newMsg]})
+      console.log(newMsg);
+      this.state.messages.push([newMsg])
     }
     
    render(){
