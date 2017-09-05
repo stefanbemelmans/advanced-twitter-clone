@@ -14,8 +14,8 @@ import Notification from './Notification';
     // }
     
     render(){
-      const messages = this.props.messages.map(message => { 
-        return <Notification message={this.props.message} key={message} />
+      const messages = this.props.messages.map((message, i) => { 
+        return <Notification message={this.props.message} key={i} />
       })
       return (
         <div id="notify" className="other"> 
@@ -23,11 +23,7 @@ import Notification from './Notification';
             
             {messages}
            
-            <h3>"this is supposed to be a message" Or Something</h3> */}
-           
-            <h1>So how about that! This should be a message soon!</h1>
-            <h3>This is ALSO supposed to be a message</h3>
-          
+            
          </div>
             
     )       

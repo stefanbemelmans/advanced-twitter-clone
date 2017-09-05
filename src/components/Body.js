@@ -2,17 +2,17 @@
 import React from 'react';
 import Message from './Message.js';
 import Notifications from './Notifications.js';
-import Notification from './Notification.js';
+//import Notification from './Notification.js';
 
 export default class Body extends React.Component {
     constructor(props) {
         super(props);
         this.state = { messages: []}
-        this.newMsg = this.newMsg.bind(this);
+        //this.newMsg = this.newMsg.bind(this);
     }
-    newMsg(newState) {
-        this.setState({messages: [newState]})
-    }
+    // newMsg(newState) {
+    //     this.setState({messages: [newState]})
+    
     render(){
     return (
         <div className="body">
@@ -22,7 +22,8 @@ export default class Body extends React.Component {
             <p>Lorem Ipmsum and all that</p>
             <br />
             <img src="https://placeholdit.co//i/200x200?&text=Picture" alt="logo" />
-            <div> <Message callBack={ (newState) => this.newMsg(newState) } />  
+            <div> 
+                <Message newMsg={ (message)  => this.props.newMsg(message) } />  
              
              </div>
               <Notifications messages={this.state.messages} /> 

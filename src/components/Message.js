@@ -20,14 +20,14 @@ export default class Message extends React.Component {
     handleSubmit(event) {
       event.preventDefault();
       console.log(this.state.value);
-      this.props.callBack(this.state.value);
+      this.props.newMsg(this.state.value);
       // this.setState({message:this.state.value})
     }
     render() {
       return (
         <form onSubmit={this.handleSubmit}>
           <label>
-            Name:
+            Message:
             <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
           <input type="submit" value="Submit" />

@@ -35,7 +35,7 @@ export default class App extends React.Component{
           <div className='flex-grid'>
           <Profile />
 
-          <Body callBack={(newMsg) => this.msgChange(newMsg)} />
+          <Body newMsg={(newMsg) => this.msgChange(newMsg)} />
           
            <Notifications messages={this.state.messages} />
             

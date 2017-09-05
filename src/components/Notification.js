@@ -1,13 +1,7 @@
 import React from 'react';
 
-export default class Notification extends React.Component{
-    constructor(props){
-				super(props);
-				// this.setState({props:message})
-                 }
-    render(){
-        
-         
+export default function Notification(props){
+   
         return(
         	<div className="notification">
             <img src="https://placeholdit.co//i/50x50?&text=Picture" alt='logo'/>
@@ -16,5 +10,5 @@ export default class Notification extends React.Component{
 
         	</div>
         )   	  
-      }
-    }
+      };
+    
